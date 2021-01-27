@@ -16,19 +16,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2of-NV-2Lx" userLabel="orange">
-                                <rect key="frame" x="87" y="302" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2of-NV-2Lx" userLabel="orange">
+                                <rect key="frame" x="20" y="64" width="374" height="366"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EBY-M9-Txu" userLabel="blue">
-                                <rect key="frame" x="87" y="466" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EBY-M9-Txu" userLabel="blue">
+                                <rect key="frame" x="20" y="450" width="374" height="392"/>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.20392156859999999" green="0.30196078430000001" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2of-NV-2Lx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="6L0-M5-O8H"/>
+                            <constraint firstItem="2of-NV-2Lx" firstAttribute="width" secondItem="EBY-M9-Txu" secondAttribute="width" id="6uu-Al-OXD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2of-NV-2Lx" secondAttribute="trailing" constant="20" id="6xD-md-HvR"/>
+                            <constraint firstItem="EBY-M9-Txu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Dh0-e6-aJk"/>
+                            <constraint firstItem="2of-NV-2Lx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Uc3-fH-e59"/>
+                            <constraint firstItem="EBY-M9-Txu" firstAttribute="top" secondItem="2of-NV-2Lx" secondAttribute="bottom" constant="20" id="eJO-Rf-4sF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EBY-M9-Txu" secondAttribute="bottom" constant="20" id="jNA-wP-xtT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EBY-M9-Txu" secondAttribute="trailing" constant="20" id="qAM-6e-JU9"/>
+                            <constraint firstItem="2of-NV-2Lx" firstAttribute="height" secondItem="EBY-M9-Txu" secondAttribute="height" multiplier="0.933673" id="xXI-RV-PTm"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
